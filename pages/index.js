@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from './index.module.css'
 
-const Home = () => (
+const Home = ({ testProp }) => (
   <div className={styles.container}>
     <Head>
       <title>Create Next App</title>
@@ -44,5 +44,9 @@ const Home = () => (
     </main>
   </div>
 )
+
+export const getStaticProps = async () => {
+  return { props: { testProp: "hello" } }
+}
 
 export default Home
