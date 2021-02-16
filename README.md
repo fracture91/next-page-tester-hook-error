@@ -9,4 +9,5 @@ This includes Next.js' built-in support for Global CSS, CSS Modules, and TypeScr
 ```bash
 npm install
 npm test
+# press a to run all tests if prompted
 ```
